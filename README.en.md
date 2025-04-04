@@ -10,3 +10,11 @@ Responsible for managing product and category data. Uses MongoDB for document-ba
 - .NET 8  
 - MongoDB  
 - AutoMapper 
+
+### 🧾 Discount Service  
+Responsible for managing discount coupons. Supports creating, updating, deleting, and listing coupons. Data is stored in an MSSQL database and accessed using Dapper.
+
+**Technologies Used:**
+- .NET 8  
+- MSSQL  
+- Dapper  
