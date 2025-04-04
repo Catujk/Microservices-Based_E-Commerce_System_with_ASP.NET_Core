@@ -12,3 +12,11 @@ MicroShop, ASP.NET Core ve mikroservis mimarisi kullanılarak geliştirilmiş bi
 - .NET 8  
 - MongoDB  
 - AutoMapper  
+
+### 🧾 Discount Service  
+İndirim kuponlarının yönetildiği servistir. Kupon ekleme, güncelleme, silme ve listeleme işlemleri yapılır. Veriler MSSQL veritabanında tutulur ve Dapper ile erişilir.
+
+**Kullanılan Teknolojiler:**
+- .NET 8  
+- MSSQL  
+- Dapper 
