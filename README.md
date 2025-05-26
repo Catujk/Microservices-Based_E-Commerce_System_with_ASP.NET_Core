@@ -25,21 +25,19 @@ MicroShop, ASP.NET Core ve mikroservis mimarisi kullanılarak geliştirilmiş bi
 
 Mikroservis mimarisi tabanlı e-ticaret sistemi içinde sipariş yönetimini sağlayan servis.
 
-Teknolojiler
-•	.NET 8
-•	Entity Framework Core 9.0
-•	MediatR 12.5
-•	SQL Server
-•	Clean Architecture
-Özellikleri
-•	Sipariş oluşturma ve yönetme
-•	Sipariş detaylarını izleme
-•	Müşteri adres bilgilerini yönetme
-•	CQRS pattern ile geliştirme
-Katmanlar
-•	Domain: Temel varlıklar (Ordering, OrderDetail, Address)
-•	Application: İş mantığı, CQRS komutları ve sorguları
-•	Persistence: Veritabanı işlemleri ve repository
-•	WebAPI: RESTful API endpoint'leri
-API
-Swagger üzerinden tüm sipariş, adres ve detay işlemleri yapılabilir.
+**Teknolojiler**
+- .NET 8
+- Entity Framework Core
+- MediatR
+- SQL Server
+- Clean Architecture
+**Özellikleri**
+- Sipariş oluşturma ve yönetme
+-	Sipariş detaylarını izleme
+-	Müşteri adres bilgilerini yönetme
+-	CQRS pattern ile geliştirme
+**Katmanlar**
+-	Domain: Temel varlıklar (Ordering, OrderDetail, Address)
+-	Application: İş mantığı, CQRS komutları ve sorguları
+-	Persistence: Veritabanı işlemleri ve repository
+-	WebAPI: RESTful API endpoint'leri
