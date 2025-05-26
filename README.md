@@ -22,10 +22,10 @@ MicroShop, ASP.NET Core ve mikroservis mimarisi kullanılarak geliştirilmiş bi
 **Yapı**
 
 -	Entities:
--	 Product (Ürün bilgileri)
-  -	Category (Kategori bilgileri)
-  -	ProductDetail (Ürün detayları)
-  -	ProductImage (Ürün görselleri)
+    -	 Product (Ürün bilgileri)
+    -	Category (Kategori bilgileri)
+    -	ProductDetail (Ürün detayları)
+    -	ProductImage (Ürün görselleri)
 
 -	Services:
     -  	ProductService (Ürün işlemleri)
