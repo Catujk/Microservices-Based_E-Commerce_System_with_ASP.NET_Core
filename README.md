@@ -5,13 +5,33 @@
 ## 📦 Proje Hakkında
 MicroShop, ASP.NET Core ve mikroservis mimarisi kullanılarak geliştirilmiş bir e-ticaret sistemidir. Bu projede her servis bağımsız olarak geliştirildi ve farklı teknolojilerle entegre edildi.
 
-### 🛍️ Catalog Service  
-Ürün ve kategori verilerinin yönetildiği servistir. MongoDB kullanılarak belge tabanlı veri saklama yapılır.
+### 🛒 Catalog Service
+Ürün ve kategorilerin yönetimini sağlayan mikroservis. MongoDB veritabanı kullanarak belge tabanlı veri saklama yapılır.
 
-**Kullanılan Teknolojiler:**
-- .NET 8  
-- MongoDB  
-- AutoMapper  
+**Teknolojiler**
+-	.NET 8
+-	MongoDB
+-	AutoMapper
+
+**Özellikleri**
+-	Ürün ekleme, listeleme, güncelleme ve silme
+-	Kategori yönetimi
+-	Ürün detayları ve görselleri
+-	NoSQL veritabanı ile hızlı veri işleme
+
+**Yapı**
+-	Entities:
+  -	Product (Ürün bilgileri)
+  -	Category (Kategori bilgileri)
+  -	ProductDetail (Ürün detayları)
+  -	ProductImage (Ürün görselleri)
+-	Services:
+  -	ProductService (Ürün işlemleri)
+  -	CategoryService (Kategori işlemleri)
+  -	ProductDetailService (Ürün detay işlemleri)
+  -	ProductImageService (Ürün görsel işlemleri)
+-	DTOs: Veri transfer nesneleri
+-	Settings: MongoDB bağlantı ayarları
 
 ### 🏷️ Discount Service 
 İndirim kuponlarının yönetimini sağlayan mikroservis. Kupon oluşturma, listeleme, güncelleme ve silme işlemleri bu servis üzerinden yapılır.
