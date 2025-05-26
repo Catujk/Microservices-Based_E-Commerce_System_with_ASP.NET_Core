@@ -31,11 +31,13 @@ Mikroservis mimarisi tabanlı e-ticaret sistemi içinde sipariş yönetimini sa�
 - MediatR
 - SQL Server
 - Clean Architecture
+  
 **Özellikleri**
 - Sipariş oluşturma ve yönetme
 -	Sipariş detaylarını izleme
 -	Müşteri adres bilgilerini yönetme
 -	CQRS pattern ile geliştirme
+
 **Katmanlar**
 -	Domain: Temel varlıklar (Ordering, OrderDetail, Address)
 -	Application: İş mantığı, CQRS komutları ve sorguları
