@@ -3,7 +3,7 @@
 # Mikroservis E-Ticaret Projesi
 
 ## 📦 Proje Hakkında
-MicroShop, ASP.NET Core ve mikroservis mimarisi kullanılarak geliştirilmiş bir e-ticaret sistemidir. Bu projede her servis bağımsız olarak geliştiriliyor ve farklı teknolojilerle entegre edilecek.
+Bu proje ASP.NET Core ve mikroservis mimarisi kullanılarak geliştirilen bir e-ticaret projesidir. Bu projede her servis bağımsız olarak geliştiriliyor ve farklı teknolojilerle entegre edilecek.
 
 ### 🛒 Catalog Service
 Ürün ve kategorilerin yönetimini sağlayan mikroservis. MongoDB veritabanı kullanarak belge tabanlı veri saklama yapılır.
