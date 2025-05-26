@@ -1,20 +1,79 @@
-# Microservices Based E-Commerce Project
+# Microservice E-Commerce Project
 
 ## 📦 About the Project
-ECommerce is a microservices-based e-commerce system built with ASP.NET Core. Each service is developed independently and integrated using modern tools and communication techniques. The project demonstrates a modular and scalable architecture suitable for real-world applications.
+MicroShop is an e-commerce system built with ASP.NET Core and microservice architecture. In this project, each service is developed independently and integrated using different technologies.
 
-### 🛍️ Catalog Service  
-Responsible for managing product and category data. Uses MongoDB for document-based data storage.
+### 🛒 Catalog Service
+Manages products and categories with a document-based MongoDB database.
 
-**Technologies Used:**
-- .NET 8  
-- MongoDB  
-- AutoMapper 
+**Technologies**
+- .NET 8
+- MongoDB
+- AutoMapper
 
-### 🧾 Discount Service  
-Responsible for managing discount coupons. Supports creating, updating, deleting, and listing coupons. Data is stored in an MSSQL database and accessed using Dapper.
+**Features**
+- Add, list, update, and delete products
+- Category management
+- Product details and images
+- Fast data processing with NoSQL
 
-**Technologies Used:**
-- .NET 8  
-- MSSQL  
-- Dapper  
+**Structure**
+- **Entities**  
+  - Product (product information)  
+  - Category (category information)  
+  - ProductDetail (detailed product data)  
+  - ProductImage (product images)
+
+- **Services**  
+  - ProductService (product operations)  
+  - CategoryService (category operations)  
+  - ProductDetailService (product detail operations)  
+  - ProductImageService (product image operations)
+
+- **DTOs**  
+  Data Transfer Objects
+
+- **Settings**  
+  MongoDB connection settings
+
+### 🏷️ Discount Service
+Handles discount coupons: creation, listing, updating, and deletion.
+
+**Technologies**
+- .NET 8
+- MSSQL
+- Dapper
+
+**Features**
+- Create and manage coupon codes
+- Define discount amounts
+- Set coupon validity periods
+- Active/inactive coupon status checks
+
+**Structure**
+- **Entities**: Coupon entity model  
+- **Services**: Business logic for coupon operations  
+- **DTOs**: Data Transfer Objects  
+- **Context**: Dapper connection management  
+
+### 📦 Order Service
+A microservice for order management within the e-commerce system.
+
+**Technologies**
+- .NET 8
+- Entity Framework Core
+- MediatR
+- SQL Server
+- Clean Architecture
+
+**Features**
+- Create and manage orders
+- Track order details
+- Manage customer address information
+- Developed using the CQRS pattern
+
+**Layers**
+- **Domain**: Core entities (Ordering, OrderDetail, Address)  
+- **Application**: Business logic, CQRS commands and queries  
+- **Persistence**: Database operations and repositories  
+- **WebAPI**: RESTful API endpoints  
